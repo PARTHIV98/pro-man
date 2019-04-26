@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+android:background="@drawable/ps11"
+    app:layout_constraintHorizontal_bias="1.0"
+    android:focusable="true"
+    >
+    <!--android:background="@drawable/gradient_bg">-->
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="203dp"-->
+        <!--android:layout_height="218dp"-->
+
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:src="@drawable/curves"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="1.0"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="1.0" />-->
+
+    <TextView
+        android:id="@+id/Tv_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Create Account"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/card_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+
+    <!--<TextView-->
+    <!--android:layout_marginLeft="25dp"-->
+    <!--android:layout_below="@id/TV_name"-->
+    <!--android:textColor="@color/black_overlay"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="or Email."/>-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_1"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="244dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45999998">
+
+        <EditText
+            android:id="@+id/ED_1"
+
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="#00000000"
+            android:hint="Username / Email"
+            android:paddingLeft="20dp"
+            android:textColor="#000000"
+            android:textColorHint="@color/black_overlay"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/ED_2"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="48dp"
+            android:background="#00000000"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColor="#000000"
+            android:textColorHint="@color/black_overlay"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/ED_3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="96dp"
+            android:background="#00000000"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+
+
+            android:textColor="#000000"
+            android:textColorHint="@color/black_overlay"
+            android:textSize="16sp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_2"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/card_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="8dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_1"
+        app:layout_constraintVertical_bias="0.29">
+
+        <Button
+            android:id="@+id/signupbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:text="Sign up"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#F8F8F7"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            />
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_2"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_2"
+        app:layout_constraintVertical_bias="0.098">
+
+        <TextView
+
+            android:id="@+id/btn_create_account"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:gravity="center_horizontal"
+            android:text="Already have an account?"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:id="@+id/loginhrbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:clickable="true"
+            android:text="Login here"
+            android:textColor="@color/colorPrimary"
+
+            android:textColorLink="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

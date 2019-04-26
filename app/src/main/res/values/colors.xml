@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorP">#6200EE</color>
+    <!--<color name="colorPrimaryDark">#3700B3</color>-->
+
+    <color name="colorPrimary">#5B5A62</color>
+    <color name="colorPrimaryDark">#323138</color>
+    <color name="colorAccent">#88878f</color>
+    <!--<color name="colorAccent">#6200EE</color>-->
+    <color name="white">#ffffff</color>
+    <color name="colorored">#f0634d</color>
+    <color name="criticalprio">#bc1900</color>
+    <color name="colorlightgreen">#99e365</color>
+    <color name="colorsuccess">#27b500</color>
+    <color name="mediumprio">#f6ebe42e</color>
+    <color name="goldyellow">#fea1</color>
+    <color name="Defalutitem">#FFAAEE11</color>
+    <color name="black_overlay">#66000000</color>
+</resources>

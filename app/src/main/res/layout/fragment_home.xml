@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:background="#f255"
+    android:id="@+id/home">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:design="http://schemas.android.com/apk/res-auto"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".MainActivity"
+        tools:showIn="@layout/activity_main"
+        android:orientation="vertical"
+        android:background="#eef0f5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="4"
+            tools:context=".MainActivity"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/ucorner"
+                android:layout_margin="12dp"
+                android:weightSum="2"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tx1"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="-8dp"
+                    tools:ignore="NestedWeights">
+
+                    <android.support.v7.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:id="@+id/card1"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="-5dp"
+
+                        app:cardCornerRadius="3dp"
+                        app:cardBackgroundColor="#ffb300">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/nts"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp"
+
+                                android:textSize="22sp"/>
+                            <!--<View-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="1dp"-->
+                                <!--android:background="#000"-->
+                                <!--android:layout_margin="10dp"/>-->
+                            <TextView
+                                android:id="@+id/not"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Not Started"
+                                android:padding="3dp"
+                                android:textColor="#fff"/>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:id="@+id/cd2"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_margin="10dp"
+                        app:cardBackgroundColor="#6200EE"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="6dp"
+
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/reviewdcnt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp"
+                                android:text="0"
+                                android:textSize="22sp"/>
+                            <!--<View-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="1dp"-->
+                                <!--android:background="#000"-->
+                                <!--android:layout_margin="10dp"/>-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Review"
+                                android:padding="3dp"
+                                android:textColor="#fff"/>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="-8dp"
+
+
+
+                    >
+
+                    <android.support.v7.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:id="@+id/cd3"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="-5dp"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="6dp"
+                        app:cardBackgroundColor="#00bfa5">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/inprogcnt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp"
+                                android:text="5"
+                                android:textSize="22sp"/>
+                            <!--<View-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="1dp"-->
+                                <!--android:background="#000"-->
+                                <!--android:layout_margin="10dp"/>-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="In Progress"
+                                android:padding="3dp"
+                                android:textColor="#fff"/>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:id="@+id/cd4"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="3dp"
+                        app:cardBackgroundColor="#f42e78">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/completedcnt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp"
+                                android:text="2"
+                                android:textSize="22sp"/>
+                            <!--<View-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="1dp"-->
+                                <!--android:background="#000"-->
+                                <!--android:layout_margin="10dp"/>-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Completed"
+                                android:padding="3dp"
+                                android:textColor="#fff"/>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ucorner"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="Priority Wise Task"
+                        android:textColor="#000"
+                        android:paddingTop="7dp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dp"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".50"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp">
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp">
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar1"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="225dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:progress="0"
+                                    android:theme="@style/criticalcolor"
+                                    android:scaleY="2"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/txt1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:gravity="center_vertical"
+                                    android:paddingRight="15dp"
+                                    android:text="0 Task"
+                                    android:textSize="10sp"
+                                    android:textColor="@color/criticalprio"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/progressBar1" />
+                            </android.support.constraint.ConstraintLayout>
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp">
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar2"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="225dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:progress="0"
+                                    android:scaleY="2"
+                                    android:theme="@style/colorored"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/txt2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:gravity="center_vertical"
+                                    android:paddingRight="15dp"
+                                    android:text="0 Task"
+                                    android:textSize="10sp"
+                                    android:textColor="@color/colorored"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/progressBar2" />
+
+
+                            </android.support.constraint.ConstraintLayout>
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp">
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar3"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="225dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:progress="20"
+                                    android:scaleY="2"
+                                    android:theme="@style/goldyellow"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/txt3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:gravity="center_vertical"
+                                    android:paddingRight="15dp"
+                                    android:text="2 Task"
+                                    android:textSize="10sp"
+                                    android:textColor="@color/goldyellow"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/progressBar3" />
+
+                            </android.support.constraint.ConstraintLayout>
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp">
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar4"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="225dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:progress="10"
+                                    android:scaleY="2"
+                                    android:theme="@style/lightgreen"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/txt4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:gravity="center_vertical"
+                                    android:paddingRight="15dp"
+                                    android:text="1 Task"
+                                    android:textSize="10sp"
+                                    android:textColor="@color/colorlightgreen"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/progressBar4" />
+
+                            </android.support.constraint.ConstraintLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="100dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="2dp"
+
+                        >
+
+                        <Button
+                            android:id="@+id/clrbt1"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/circle"
+                            android:padding="15dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.428"
+                            android:backgroundTint="@color/criticalprio"/>
+
+                        <TextView
+                            android:id="@+id/clrtxt1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/clrbt1"
+                            android:layout_alignEnd="@+id/clrbt1"
+                            android:layout_marginLeft="2dp"
+                            android:text="Critical"
+                            android:textAlignment="center"
+                            android:textSize="11sp"
+                            app:layout_constraintLeft_toRightOf="@+id/clrbt1" />
+
+                        <Button
+                            android:id="@+id/clrbt2"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@drawable/circle"
+                            android:backgroundTint="@color/colorored"
+                            android:padding="15dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toRightOf="@+id/clrtxt1"
+                            app:layout_constraintTop_toTopOf="parent"
+                            />
+
+                        <TextView
+                            android:id="@+id/clrtxt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="center_vertical"
+                            android:text="High"
+                            android:textAlignment="center"
+                            android:textSize="11sp"
+
+                            app:layout_constraintLeft_toRightOf="@+id/clrbt2" />
+
+                        <Button
+                            android:id="@+id/clrbt3"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:backgroundTint="@color/goldyellow"
+                            android:layout_marginLeft="8dp"
+                            android:background="@drawable/circle"
+                            android:padding="15dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toRightOf="@+id/clrtxt2"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/clrtxt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:text="Medium"
+                            android:textAlignment="center"
+                            android:textSize="11sp"
+
+                            app:layout_constraintLeft_toRightOf="@+id/clrbt3" />
+
+                        <Button
+                            android:id="@+id/clrbt4"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@drawable/circle"
+                            android:padding="15dp"
+                            android:backgroundTint="@color/colorlightgreen"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toRightOf="@+id/clrtxt3"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:text="Low"
+                            android:textAlignment="center"
+                            android:textSize="11sp"
+
+                            app:layout_constraintLeft_toRightOf="@+id/clrbt4" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+
+                android:weightSum="3"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:background="@drawable/ucorner"
+                android:baselineAligned="false"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Task By Due Date"
+                    android:textColor="#000"
+                   android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+   >
+
+
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/dc1"
+                    android:layout_width="110dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="6dp"
+
+                    android:layout_margin="4dp"
+                    app:cardBackgroundColor="#dee84d"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="3"
+                            android:textSize="20sp"/>
+                        <!--<View-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="1dp"-->
+                            <!--android:background="#000"-->
+                            <!--android:layout_margin="10dp"/>-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Today"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:textColor="#fff"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/dc2"
+                    android:layout_width="110dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="6dp"
+                    android:layout_margin="4dp"
+                    app:cardBackgroundColor="#fa963e">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="0"
+                            android:textSize="20sp"/>
+                        <!--<View-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="1dp"-->
+                            <!--android:background="#000"-->
+                            <!--android:layout_margin="10dp"/>-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Tommorow"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:textColor="#fff"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/dc3"
+                    android:layout_width="110dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="6dp"
+                    android:layout_margin="4dp"
+                    app:cardBackgroundColor="#69ece3">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="0"
+                            android:textSize="20sp"/>
+                        <!--<View-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="1dp"-->
+                            <!--android:background="#000"-->
+                            <!--android:layout_margin="10dp"/>-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="This Week"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:textColor="#fff"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</FrameLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/projnamelyt">
+
+        <android.support.v7.widget.CardView
+            android:clickable="true"
+            android:id="@+id/cardviewproject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="3dp"
+            android:focusable="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+             android:layout_gravity="top"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+              >
+
+                <TextView
+                    android:id="@+id/projectTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+               android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Title"
+
+                    android:textSize="18sp"/>
+
+                <Button
+                    android:id="@+id/edtprj"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/ic_edit_black_24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    />
+                <Button
+                    android:id="@+id/dltprj"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/ic_delete_black_24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    />
+
+            </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black_overlay"
+            />
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

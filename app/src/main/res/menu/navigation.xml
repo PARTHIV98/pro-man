@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/home"
+       />
+    <item
+        android:id="@+id/task"
+        android:icon="@drawable/tasks"
+        android:title="@string/task" />
+
+    <item
+        android:id="@+id/project"
+        android:icon="@drawable/project"
+        android:title="@string/project" />
+    <item
+        android:id="@+id/meeting"
+        android:icon="@drawable/ic_today_grey_24dp"
+        android:title="@string/meeting" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="@string/profile" />
+
+
+</menu>

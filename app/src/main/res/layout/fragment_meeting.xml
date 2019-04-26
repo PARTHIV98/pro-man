@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeetingFragment"
+    android:id="@+id/meeting"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+  <RelativeLayout
+      android:id="@+id/rladdmeettxt"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <android.support.v7.widget.CardView
+          android:id="@+id/addmeet"
+          android:layout_width="match_parent"
+          android:layout_height="50dp">
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Add Meeting"
+      android:layout_marginLeft="8dp"
+      android:textSize="16sp"
+      android:layout_gravity="center_vertical"/>
+
+          <Button
+              android:id="@+id/add_meetbtn"
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:background="@drawable/ic_add_circle_black_24dp"
+              android:layout_gravity="right|center_vertical"
+
+              android:backgroundTint="@color/colorPrimaryDark"
+              android:layout_marginRight="12dp"/>
+      </android.support.v7.widget.CardView>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/colorAccent"
+          android:layout_below="@+id/addmeet"
+          android:layout_marginTop="0dp"></View>
+  <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:layout_below="@+id/addmeet"
+      android:layout_marginTop="10dp"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/meetrcv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>

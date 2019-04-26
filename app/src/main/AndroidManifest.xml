@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.parth.pman">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".CreateProject"
+            android:label="Create Project" />
+        <activity
+            android:name=".CreateTask"
+            android:label="Create Task" />
+        <activity
+            android:name=".FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".UpdateTask"
+            android:label="Update task" />
+        <activity android:name=".Login" />
+        <activity android:name=".Signup" />
+        <activity
+            android:name=".ResetPassword"
+            android:label="Reset Password" />
+        <activity
+            android:name=".UserDetail"
+            android:label="User Details" />
+        <activity android:name=".CreateMeeting" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".meeting_activity" />
+        <activity android:name=".project_task" />
+        <activity android:name=".DetailedTaskView" />
+        <activity android:name=".Attachments"
+            android:label="Attachments"></activity>
+    </application>
+
+</manifest>

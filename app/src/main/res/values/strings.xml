@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ProMan</string>
+    <string name="home">Home</string>
+    <string name="task">Task</string>
+    <string name="project">Project</string>
+    <string name="meeting">Meeting</string>
+    <string name="profile">Profile</string>
+
+    <string name="title_activity_task_create">TaskCreateActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string-array name="android_dropdown_arrays">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+
+    </string-array>
+</resources>

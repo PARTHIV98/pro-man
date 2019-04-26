@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateProject"
+    android:background="#ecd7e3e7"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="top"
+        android:id="@+id/rl1"
+        >
+        <EditText
+            android:id="@+id/P_ET1"
+            android:textColorHint="@color/black_overlay"
+            android:inputType="text"
+            android:textSize="16sp"
+
+            android:paddingLeft="20dp"
+            android:background="@drawable/ucorner"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="Project Name"/>
+        <EditText
+            android:id="@+id/P_ET2"
+            android:textColorHint="@color/black_overlay"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:layout_below="@id/P_ET1"
+            android:paddingLeft="20dp"
+            android:background="@drawable/ucorner"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="Add Tasks"/>
+        <!--<android.support.v7.widget.SearchView-->
+            <!--android:layoutDirection="rtl"-->
+            <!--android:id="@+id/ST2"-->
+            <!--android:clickable="true"-->
+            <!--app:queryHint="Search task"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_below="@+id/ET1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="46dp"-->
+
+
+            <!--/>-->
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="46dp"-->
+            <!--android:layout_below="@id/ET1"-->
+
+            <!--android:paddingStart="20dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:background="@drawable/ucorner"/> -->
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f374e387"
+            android:text="Create"
+            android:textAllCaps="false"
+            style="?metaButtonBarButtonStyle"
+            android:id="@+id/crtprjbtn"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

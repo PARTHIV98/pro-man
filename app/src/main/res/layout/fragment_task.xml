@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/task"
+    android:layout_height="match_parent"
+    tools:context=".TaskFragment"
+    android:background="@color/white">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="Task Fragment"-->
+        <!--android:textColor="#fff"-->
+        <!--android:textSize="25sp"-->
+        <!--android:gravity="center"/>-->
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fabadd"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:src="@drawable/ic_done_black_24dp" />-->
+<com.github.clans.fab.FloatingActionMenu
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    app:menu_colorNormal="@color/colorPrimary"
+    android:id="@+id/floating_action_menu"
+    android:layout_gravity="bottom|end"
+    fab:menu_labels_showShadow="false"
+    app:menu_labels_colorNormal="#000"
+    app:menu_backgroundColor="@android:color/transparent"
+    android:layout_margin="16dp"
+    fab:menu_openDirection="up"
+
+    >
+    <com.github.clans.fab.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_shadowColor="@color/colorAccent"
+        fab:fab_size="mini"
+        android:id="@+id/task_create"
+        fab:fab_colorPressed="#dddfdfdf"
+        fab:fab_colorNormal="@color/white"
+        fab:fab_label="Create Task"
+        android:src="@drawable/ic_iconfinder_taskstroke_1737368"></com.github.clans.fab.FloatingActionButton>--
+    <com.github.clans.fab.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_shadowColor="@color/colorAccent"
+        fab:fab_size="mini"
+        android:id="@+id/create_project"
+        fab:menu_labels_showShadow="false"
+        fab:fab_colorPressed="#dddfdfdf"
+        fab:fab_colorNormal="@color/white"
+        fab:fab_label="Create Project"
+        android:clickable="true"
+        android:src="@drawable/ic_folder_black_24dp"></com.github.clans.fab.FloatingActionButton>
+
+</com.github.clans.fab.FloatingActionMenu>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        />
+</FrameLayout>

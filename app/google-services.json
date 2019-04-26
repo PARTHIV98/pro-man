@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "892498544344",
+    "firebase_url": "https://proman-befb8.firebaseio.com",
+    "project_id": "proman-befb8",
+    "storage_bucket": "proman-befb8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892498544344:android:62f7e8b0cd331f61",
+        "android_client_info": {
+          "package_name": "com.example.parth.pman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892498544344-6nta8crk521lro1t1gfjrai1et66aram.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.parth.pman",
+            "certificate_hash": "ce0783dac0d2f63f7a941eb75540398c0ab46946"
+          }
+        },
+        {
+          "client_id": "892498544344-ekhnr6jt93o5kgj5qm8voasn024o053d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-Ccuic9aymxHQObCNrR9aNKN0WH2Pkok"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892498544344-ekhnr6jt93o5kgj5qm8voasn024o053d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
